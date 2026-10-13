@@ -25,9 +25,9 @@ I'm **Ravi Shankar** — a **Senior AI Engineer** passionate about designing rob
 
 | ⚡ Metric | Value |
 | :--- | :--- |
-| 📦 **Public Repositories** | `40` |
-| 🔥 **Yearly Contributions** | `182` |
-| 💻 **Yearly Commits** | `153` |
+| 📦 **Public Repositories** | `41` |
+| 🔥 **Yearly Contributions** | `184` |
+| 💻 **Yearly Commits** | `154` |
 | 🔀 **Pull Requests** | `3` |
 | ⭐ **Total Stars Earned** | `11` |
 

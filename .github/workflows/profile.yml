@@ -1,0 +1,76 @@
+name: Profile
+
+on:
+  schedule:
+    # 04:17 UTC daily. Off-the-hour to avoid GitHub Actions scheduler spikes.
+    - cron: "17 4 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/**"
+      - ".github/workflows/profile.yml"
+
+concurrency:
+  group: profile
+  cancel-in-progress: false
+
+jobs:
+  stats:
+    name: Refresh Profile Stats
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Rebuild GitHub stats card
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/make_github_card.py --user ${{ github.repository_owner }}
+
+      - name: Rebuild header banner and README
+        run: |
+          python3 scripts/make_header.py
+          python3 scripts/render_readme.py
+
+      - name: Commit if stats changed
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No change in stats today - nothing to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md assets metrics
+          git commit -m "chore: refresh profile stats & banner [skip ci]"
+          git push
+
+  snake:
+    name: Generate Contribution Snake
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Build snake SVGs
+        uses: Platane/snk@v3
+        id: snake
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
+
+      - name: Publish to output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

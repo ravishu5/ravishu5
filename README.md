@@ -4,6 +4,7 @@
 
 <p align="center">
   <a href="https://github.com/ravishu5"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-ravishu5-181717?style=for-the-badge&logo=github&logoColor=white"></a>
+  <a href="https://leetcode.com/u/ravishankarnitr/"><img alt="LeetCode" src="https://img.shields.io/badge/LeetCode-ravishankarnitr-FFA116?style=for-the-badge&logo=leetcode&logoColor=black"></a>
   <a href="https://huggingface.co/ravishu5"><img alt="Hugging Face" src="https://img.shields.io/badge/Hugging%20Face-ravishu5-ffd21e?style=for-the-badge&logo=huggingface&logoColor=black"></a>
   <a href="https://linkedin.com/in/ravishu5"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Connect-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white"></a>
   <a href="mailto:itsshankar.ravi@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-Contact%20Me-ea4335?style=for-the-badge&logo=gmail&logoColor=white"></a>

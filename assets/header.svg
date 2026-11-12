@@ -56,15 +56,15 @@
     <line x1="740" y1="62" x2="740" y2="186" stroke="#4a3c31" stroke-width="1"/>
     <text class="section" x="770" y="84">METRICS</text>
     <g>
-    <text class="stat-value" x="808" y="142" text-anchor="middle">41</text>
+    <text class="stat-value" x="808" y="142" text-anchor="middle">42</text>
     <text class="stat-label" x="808" y="170" text-anchor="middle">REPOSITORIES</text>
-    <text class="stat-value" x="968" y="142" text-anchor="middle">187</text>
+    <text class="stat-value" x="968" y="142" text-anchor="middle">190</text>
     <text class="stat-label" x="968" y="170" text-anchor="middle">CONTRIBUTIONS · 1Y</text>
-    <text class="stat-value" x="1108" y="142" text-anchor="middle">157</text>
+    <text class="stat-value" x="1108" y="142" text-anchor="middle">159</text>
     <text class="stat-label" x="1108" y="170" text-anchor="middle">COMMITS · 1Y</text>
     </g>
 
-    <text class="stamp" x="1140" y="212" text-anchor="end">updated 11 Nov 2026</text>
+    <text class="stamp" x="1140" y="212" text-anchor="end">updated 12 Nov 2026</text>
   </g>
   <rect x="0.5" y="0.5" width="1199" height="299" rx="20"
         fill="none" stroke="#4a3c31" stroke-width="1"/>

@@ -25,13 +25,13 @@ I'm **Ravi Shankar** — a **Senior AI Engineer** passionate about designing rob
 
 | ⚡ Metric | Value |
 | :--- | :--- |
-| 📦 **Public Repositories** | `42` |
-| 🔥 **Yearly Contributions** | `190` |
-| 💻 **Yearly Commits** | `159` |
+| 📦 **Public Repositories** | `43` |
+| 🔥 **Yearly Contributions** | `196` |
+| 💻 **Yearly Commits** | `164` |
 | 🔀 **Pull Requests** | `3` |
 | ⭐ **Total Stars Earned** | `11` |
 
-<sub>Auto-synced via GitHub GraphQL API · Refreshed 23 November 2026</sub>
+<sub>Auto-synced via GitHub GraphQL API · Refreshed 24 November 2026</sub>
 <!-- DYNAMIC-STATS:END -->
 
 ---
